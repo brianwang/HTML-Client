@@ -2,18 +2,21 @@ import React from 'react'
 import ServerOtherInput from './ServerOtherInput'
 
 const ServerSelection = () => (
-  <h4>{"Please log in to continue, or see below for instructions and assistance."}</h4>
+  <h4>Please log in to continue, or see below for instructions and assistance.</h4>
+  // TODO refactor this using formsy-react or other forms library for React
   <form name="login_information" id="login_information" class="login-form">
     <div class="form-group">
-      <label for="server" aria-label="Server">{"Server:"}</label>
+      <label htmlFor="server" aria-label="Server">{"Server:"}</label>
+      // TODO the server data was extracted into ../containers/gameServers
+      // and needs to be imported from there and parsed into this selection menu
       <select name="server" id="server" class="form-control">
-          <option value="ws://127.0.0.1:4243">{"Local host"}</option>
-          <option value="ws://dwarftowers.com:4243">{"dwarftowers.com"}</option>
-          <option value="ws://stats.zomis.net:4243">{"zomis.net"}</option>
-          <option value="other">{"Other..."}</option>
+          <option value="ws://127.0.0.1:4243">Local host</option>
+          <option value="ws://dwarftowers.com:4243">dwarftowers.com</option>
+          <option value="ws://stats.zomis.net:4243">zomis.net</option>
+          <option value="other">Other...</option>
       </select>
       // TODO add some clarification as to what this "secure" selection actually does
-      <label for="secure">{"Is secure server:"}</label>
+      <label htmlFor="secure">Is secure server:</label>
       <input name="secure" id="secure" type="checkbox" value="secure" />
     </div>
 
@@ -21,7 +24,7 @@ const ServerSelection = () => (
     <ServerOtherInput />
 
     <div class="form-group">
-      <label for="username">{"Username:"}</label>
+      <label htmlFor="username">Username:</label>
       <input name="username" id="username" type="text" class="form-control" placeholder="Enter name..." />
     </div>
     <div class="form-group">
