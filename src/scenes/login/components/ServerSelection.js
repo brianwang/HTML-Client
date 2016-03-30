@@ -6,7 +6,7 @@ const ServerSelection = () => (
   // TODO refactor this using formsy-react or other forms library for React
   <form name="login_information" id="login_information" class="login-form">
     <div class="form-group">
-      <label htmlFor="server" aria-label="Server">{"Server:"}</label>
+      <label htmlFor="server" aria-label="Server">Server:</label>
       // TODO the server data was extracted into ../containers/gameServers
       // and needs to be imported from there and parsed into this selection menu
       <select name="server" id="server" class="form-control">
