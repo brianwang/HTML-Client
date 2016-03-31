@@ -5,7 +5,7 @@ const LobbyMessageList = ({ userFrom, message, timestamp }) => (
     <ul id="lobby-chat-messages">
       // TODO wire this to redux
       <li id="lobby-chat-message">
-          {"["}{timestamp}{"]"} {userFrom}: {message}
+          [{timestamp}] {userFrom}: {message}
       </li>
     </ul>
   </td>

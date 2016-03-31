@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LobbyMods = (mod) => (
+const LobbyMods = ({mod}) => (
   <tr id="lobby-mods">
     <td colspan="2" id="lobby-mod-selection">
       // TODO fix this form with formsy-react or other such library
