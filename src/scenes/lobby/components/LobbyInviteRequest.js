@@ -10,8 +10,8 @@ const LobbyInviteRequest = ({ playerName, gameType, acceptInvite }) => (
         // TODO wire this to redux 
         Game invite from {playerName} to play {gameType}!<br/>
         // TODO buttons need to accept or decline respectively
-        <input type="button" value="Accept" class="btn btn-success"/>
-        <input type="button" value="Decline" class="btn btn-danger"/>
+        <input type="button" value="Accept" className="btn btn-success"/>
+        <input type="button" value="Decline" className="btn btn-danger"/>
         <audio id="ping">
           <source src="ping_sound.mp3" type="audio/mpeg">
         </audio>
