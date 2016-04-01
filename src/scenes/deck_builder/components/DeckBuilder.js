@@ -3,7 +3,6 @@ import DeckHeader from './DeckHeader'
 import DeckControls from './DeckControls'
 import SceneControls from './SceneControls'
 import SavedDecksList from './SavedDecksList'
-import FocusedCard from './FocusedCard'
 import CardsListTable from './CardsListTable'
 
 /*** READ ME! ***
@@ -20,7 +19,11 @@ const DeckBuilder = () => (
     <DeckControls />
     <SceneControls />
     <SavedDecksList />
-    <FocusedCard />
+    // NOTE Perhaps this could be part of the Redux Store under "focusedCard"
+    // See https://github.com/Cardshifter/HTML-Client/commit/98ab517501e1cce37c136b9be6b4d4e74fe8cc3a#commitcomment-16930473
+    // TODO make this work, a card should be shown as focused when it is clicked, to show its actual
+    // in-game form. 
+    <Card {...cardInfo} focused />
     <CardsListTable />
   </div>
 )

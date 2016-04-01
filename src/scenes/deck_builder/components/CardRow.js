@@ -8,7 +8,7 @@ const CardRow = ({ card }) => (
       {card.properties.creatureType}
     </td>
     <td>
-      // NOTE this link must bring the card into focus - See './FocusedCard'
+      // NOTE this link must bring the card into focus
       <a href /*data-ng-click="showDetails(card)"*/>
         {card.properties.name}
       </a>
