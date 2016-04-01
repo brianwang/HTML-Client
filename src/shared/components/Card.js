@@ -21,7 +21,12 @@ const Card = ({ doingAction, targets, actions, card }) => (
     // card name
     <div>
       <div className="card-name">
-        <a href ng-click="selectEntity(card)" ng-className="{'selected': card.selected, 'targetable': doingAction && targets.indexOf(card.id) !== -1}">{card.properties.name}</a>
+        <a href 
+        /*ng-click="selectEntity(card)"*/ 
+        /*ng-className="{'selected': card.selected, 'targetable': doingAction && targets.indexOf(card.id) !== -1}"*/
+        >
+          {card.properties.name}
+        </a>
       </div>
 
     </div>
