@@ -8,7 +8,7 @@ import CardsListTable from './CardsListTable'
 
 /*** READ ME! ***
 2016-03-31 | Phrancis
-This file is full of artifacts from Angular that I have *no idea* how to even
+This component (in its subs) is full of artifacts from Angular that I have *no idea* how to even
 begin writing in a way that represents something usable with React/Redux.
 I have left many of the Angular artifacts as commented-out code for now, for the sake of
 documentation. These can safely and should be removed as React/Redux is implemented.

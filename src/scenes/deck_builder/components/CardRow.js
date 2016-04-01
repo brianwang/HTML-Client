@@ -94,3 +94,5 @@ const CardRow = ({ card }) => (
     </td>
   </tr>
 )
+
+export default CardRow
